@@ -70,10 +70,7 @@ desktop-file-install --vendor rfremix \
 rm -f %{buildroot}%{_datadir}/%{name}/locale/*/license.txt
 
 # unkhardlink
-rm %{buildroot}%{_datadir}/%{name}/locale/zh-hk/browser.js \
-	%{buildroot}%{_datadir}/%{name}/locale/zh-tw/browser.js
-cp %{buildroot}%{_datadir}/%{name}/locale/zh-cn/browser.js \
-	%{buildroot}%{_datadir}/%{name}/locale/zh-hk/browser.js
+rm %{buildroot}%{_datadir}/%{name}/locale/zh-tw/browser.js
 cp %{buildroot}%{_datadir}/%{name}/locale/zh-cn/browser.js \
 	%{buildroot}%{_datadir}/%{name}/locale/zh-tw/browser.js
 
