@@ -1,7 +1,7 @@
 Summary:	Web Browser for Linux
 Name:		opera
 Version:	11.10
-Release:	1
+Release:	2
 Epoch:		5
 
 Group:		Applications/Internet
@@ -69,6 +69,11 @@ desktop-file-install --vendor rfremix \
 # we do not need these files as default license is present
 rm -f %{buildroot}%{_datadir}/%{name}/locale/*/license.txt
 
+# install license
+rm -f %{buildroot}%{_datadir}/%{name}/defaults/license.txt
+cp %{buildroot}%{_datadir}/doc/%{name}-%{version}/LICENSE \
+	%{buildroot}%{_datadir}/%{name}/defaults/license.txt
+
 # unkhardlink
 rm %{buildroot}%{_datadir}/%{name}/locale/zh-tw/browser.js
 cp %{buildroot}%{_datadir}/%{name}/locale/zh-cn/browser.js \
@@ -119,6 +124,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Tue Apr 12 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 5:11.10-2
+- fix license window
+
 * Tue Apr 12 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 5:11.10-1
 - update to 11.10
 
