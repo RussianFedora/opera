@@ -1,14 +1,14 @@
 Summary:	Web Browser for Linux
 Name:		opera
-Version:	11.01
+Version:	11.10
 Release:	1
 Epoch:		5
 
 Group:		Applications/Internet
 License:	Proprietary
 URL:		http://www.opera.com
-Source0:	ftp://ftp.opera.com/pub/opera/linux/1101/%{name}-%{version}-1190.x86_64.rpm
-Source1:	ftp://ftp.opera.com/pub/opera/linux/1101/%{name}-%{version}-1190.i386.rpm
+Source0:	ftp://ftp.opera.com/pub/opera/linux/1110/%{name}-%{version}-2092.x86_64.rpm
+Source1:	ftp://ftp.opera.com/pub/opera/linux/1110/%{name}-%{version}-2092.i386.rpm
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildRequires:	desktop-file-utils
@@ -122,6 +122,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Tue Apr 12 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 5:11.10-1
+- update to 11.10
+
 * Thu Jan 27 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 5:11.01-1
 - update to 11.01
 
