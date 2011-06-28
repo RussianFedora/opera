@@ -1,14 +1,14 @@
 Summary:	Web Browser for Linux
 Name:		opera
-Version:	11.10
-Release:	2
+Version:	11.50
+Release:	1.R
 Epoch:		5
 
 Group:		Applications/Internet
 License:	Proprietary
 URL:		http://www.opera.com
-Source0:	ftp://ftp.opera.com/pub/opera/linux/1110/%{name}-%{version}-2092.x86_64.rpm
-Source1:	ftp://ftp.opera.com/pub/opera/linux/1110/%{name}-%{version}-2092.i386.rpm
+Source0:	ftp://ftp.opera.com/pub/opera/linux/1150/%{name}-%{version}-1074.x86_64.rpm
+Source1:	ftp://ftp.opera.com/pub/opera/linux/1150/%{name}-%{version}-1074.i386.rpm
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildRequires:	desktop-file-utils
@@ -47,10 +47,6 @@ mkdir -p %{buildroot}
 pushd %{buildroot}
 %ifarch x86_64
 rpm2cpio %{SOURCE0} | cpio -idV --quiet
-cd usr
-mv lib lib64
-cd -
-sed -i 's!/usr/lib!/usr/lib64!g' %{buildroot}%{_bindir}/%{name}
 %else
 rpm2cpio %{SOURCE1} | cpio -idV --quiet
 %endif
@@ -124,6 +120,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Tue Jun 27 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 5:11.50-1.R
+- update to 11.50
+
 * Tue Apr 12 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 5:11.10-2
 - fix license window
 
