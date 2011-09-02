@@ -1,5 +1,3 @@
-%global intrelease 1087
-
 Summary:	Web Browser for Linux
 Name:		opera
 Version:	11.51
@@ -9,8 +7,8 @@ Epoch:		5
 Group:		Applications/Internet
 License:	Proprietary
 URL:		http://www.opera.com
-Source0:	ftp://ftp.opera.com/pub/opera/linux/1151/%{name}-%{version}-%{intrelease}.x86_64.rpm
-Source1:	ftp://ftp.opera.com/pub/opera/linux/1151/%{name}-%{version}-%{intrelease}.i386.rpm
+Source0:	ftp://ftp.opera.com/pub/opera/linux/1151/%{name}-%{version}-1087.x86_64.rpm
+Source1:	ftp://ftp.opera.com/pub/opera/linux/1151/%{name}-%{version}-1087.i386.rpm
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildRequires:	desktop-file-utils
