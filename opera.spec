@@ -1,19 +1,19 @@
-%global origver 1087
+%global origver 1100
 
-Summary:	Web Browser for Linux
-Name:		opera
-Version:	11.51
-Release:	1.R
-Epoch:		5
+Summary:    Web Browser for Linux
+Name:       opera
+Version:    11.52
+Release:    1.R
+Epoch:      5
 
-Group:		Applications/Internet
-License:	Proprietary
-URL:		http://www.opera.com
-Source0:	ftp://ftp.opera.com/pub/opera/linux/1151/%{name}-%{version}-%{origver}.x86_64.rpm
-Source1:	ftp://ftp.opera.com/pub/opera/linux/1151/%{name}-%{version}-%{origver}.i386.rpm
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+Group:      Applications/Internet
+License:    Proprietary
+URL:        http://www.opera.com
+Source0:    ftp://ftp.opera.com/pub/opera/linux/1152/%{name}-%{version}-%{origver}.x86_64.rpm
+Source1:    ftp://ftp.opera.com/pub/opera/linux/1152/%{name}-%{version}-%{origver}.i386.rpm
+BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
-BuildRequires:	desktop-file-utils
+BuildRequires:  desktop-file-utils
 
 
 %description
@@ -25,10 +25,10 @@ browser lets you navigate the Web at incredible speed and
 offers you the best Internet experience.
 
 %ifarch x86_64
-%package	pluginwrapper
-Summary:	32bit wrapper for 64bit browser
-Group:		Applications/Internet
-Requires:	%{name} = %{epoch}:%{version}-%{release}
+%package    pluginwrapper
+Summary:    32bit wrapper for 64bit browser
+Group:      Applications/Internet
+Requires:   %{name} = %{epoch}:%{version}-%{release}
 
 
 %description pluginwrapper
@@ -122,6 +122,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Wed Oct 19 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 5:11.52-1.R
+- update to 11.52
+
 * Thu Sep 01 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 5:11.51-1.R
 - update to 11.51
 
