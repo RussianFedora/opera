@@ -1,16 +1,17 @@
-%global origver 1100
+%global origver 1185
 
 Summary:    Web Browser for Linux
+Summary(ru):Веб-браузер для Linux
 Name:       opera
-Version:    11.52
+Version:    11.60
 Release:    1.R
 Epoch:      5
 
 Group:      Applications/Internet
 License:    Proprietary
 URL:        http://www.opera.com
-Source0:    ftp://ftp.opera.com/pub/opera/linux/1152/%{name}-%{version}-%{origver}.x86_64.rpm
-Source1:    ftp://ftp.opera.com/pub/opera/linux/1152/%{name}-%{version}-%{origver}.i386.rpm
+Source0:    ftp://ftp.opera.com/pub/opera/linux/1160/%{name}-%{version}-%{origver}.x86_64.rpm
+Source1:    ftp://ftp.opera.com/pub/opera/linux/1160/%{name}-%{version}-%{origver}.i386.rpm
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildRequires:  desktop-file-utils
@@ -24,15 +25,31 @@ desktop domination, and instability.  This robust Web
 browser lets you navigate the Web at incredible speed and
 offers you the best Internet experience.
 
+%description -l ru
+Добро пожаловать в веб-браузер Opera. Opera отличается малыми
+размерами, скоростью загрузки HTML документов как из Интернета,
+так и с локального диска, универсальностью в загрузке и
+отображении веб-страниц, богатством настроек и абсолютной
+функциональностью. Благодаря многообразию своих настроек,
+Opera может помочь вам сберечь драгоценное онлайновое время
+и работать с вашим компьютером наиболее эффективно, то есть
+использовать Opera как профессиональный броузер, управляя выводом
+графических изображений, использованием каскадных таблиц стилей и
+интерфейсом.
+
 %ifarch x86_64
 %package    pluginwrapper
 Summary:    32bit wrapper for 64bit browser
+Summary(ru):32бит обёртка для 64bit версии браузера
 Group:      Applications/Internet
 Requires:   %{name} = %{epoch}:%{version}-%{release}
 
 
 %description pluginwrapper
 This package contains 32bit wrapper for 64bit browser
+
+%description pluginwrapper -l ru
+Этот пакет содержит 32бит обёртку для 64bit версии браузера
 %endif
 
 
@@ -122,6 +139,10 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Wed Dec 07 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 5:11.60-1.R
+- Added description in russian language
+- Update to 11.60
+
 * Wed Oct 19 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 5:11.52-1.R
 - update to 11.52
 
