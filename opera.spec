@@ -90,9 +90,9 @@ cp %{buildroot}%{_datadir}/doc/%{name}-%{version}/LICENSE \
 	%{buildroot}%{_datadir}/%{name}/defaults/license.txt
 
 # unkhardlink
-rm %{buildroot}%{_datadir}/%{name}/locale/zh-tw/browser.js
-cp %{buildroot}%{_datadir}/%{name}/locale/zh-cn/browser.js \
-	%{buildroot}%{_datadir}/%{name}/locale/zh-tw/browser.js
+# rm %{buildroot}%{_datadir}/%{name}/locale/zh-tw/browser.js
+# cp %{buildroot}%{_datadir}/%{name}/locale/zh-cn/browser.js \
+#     %{buildroot}%{_datadir}/%{name}/locale/zh-tw/browser.js
 
 
 %post
