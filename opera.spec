@@ -1,17 +1,17 @@
-%global origver 1347
+%global origver 1403
 
 Summary:    Web Browser for Linux
 Summary(ru):Веб-браузер для Linux
 Name:       opera
-Version:    11.62
-Release:    1.R
+Version:    11.64
+Release:    1%{dist}
 Epoch:      5
 
 Group:      Applications/Internet
 License:    Proprietary
 URL:        http://www.opera.com
-Source0:    ftp://ftp.opera.com/pub/opera/linux/1162/%{name}-%{version}-%{origver}.x86_64.rpm
-Source1:    ftp://ftp.opera.com/pub/opera/linux/1162/%{name}-%{version}-%{origver}.i386.rpm
+Source0:    ftp://ftp.opera.com/pub/opera/linux/1164/%{name}-%{version}-%{origver}.x86_64.rpm
+Source1:    ftp://ftp.opera.com/pub/opera/linux/1164/%{name}-%{version}-%{origver}.i386.rpm
 Source100:  README.RFRemix
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
@@ -141,6 +141,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Thu May 10 2012 Vasiliy N. Glazov <vascom2@gmail.com> - 5:11.64-1.R
+- Update to 11.64
+
 * Tue Mar 27 2012 Vasiliy N. Glazov <vascom2@gmail.com> - 5:11.62-1.R
 - Update to 11.62
 
