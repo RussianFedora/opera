@@ -132,11 +132,11 @@ rm -rf %{buildroot}
 %{_datadir}/mime/*
 %{_datadir}/applications/*.desktop
 %ifarch x86_64
-%exclude %{_libdir}/%{name}/operapluginwrapper-ia32-linux
+%exclude %{_libdir}/%{name}/pluginwrapper/operapluginwrapper-ia32-linux
 
 %files pluginwrapper
 %defattr(-, root, root)
-%{_libdir}/%{name}/operapluginwrapper-ia32-linux
+%{_libdir}/%{name}/pluginwrapper/operapluginwrapper-ia32-linux
 %endif
 
 
