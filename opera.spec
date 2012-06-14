@@ -1,9 +1,9 @@
-%global origver 1403
+%global origver 1467
 
 Summary:    Web Browser for Linux
 Summary(ru):Веб-браузер для Linux
 Name:       opera
-Version:    11.64
+Version:    12.00
 Release:    1%{dist}
 Epoch:      5
 
@@ -141,6 +141,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Thu Jun 14 2012 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00-1.R
+- Update to 12.00
+
 * Thu May 10 2012 Vasiliy N. Glazov <vascom2@gmail.com> - 5:11.64-1.R
 - Update to 11.64
 
