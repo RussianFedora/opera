@@ -12,7 +12,6 @@ License:    Proprietary
 URL:        http://www.opera.com
 Source0:    ftp://ftp.opera.com/pub/opera/linux/1200/%{name}-%{version}-%{origver}.x86_64.rpm
 Source1:    ftp://ftp.opera.com/pub/opera/linux/1200/%{name}-%{version}-%{origver}.i386.rpm
-Source100:  README.RFRemix
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildRequires:  desktop-file-utils
@@ -59,7 +58,7 @@ This package contains 32bit wrapper for 64bit browser
 
 
 %build
-cp %{SOURCE100} .
+
 
 %install
 rm -rf %{buildroot}
@@ -122,8 +121,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-, root, root)
-%{_datadir}/doc/%{name}-%{version}/*
-%doc README.RFRemix
+%{_defaultdocdir}/%{name}-%{version}/*
 %{_bindir}/%{name}*
 %{_libdir}/opera/*
 %{_datadir}/opera/*
