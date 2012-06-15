@@ -122,7 +122,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-, root, root)
-%doc %{_datadir}/doc/%{name}-%{version}/*
+%{_datadir}/doc/%{name}-%{version}/*
 %doc README.RFRemix
 %{_bindir}/%{name}*
 %{_libdir}/opera/*
