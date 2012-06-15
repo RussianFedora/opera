@@ -121,7 +121,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-, root, root)
-%{_defaultdocdir}/%{name}-%{version}/*
+%{_defaultdocdir}/%{name}-%{version}
 %{_bindir}/%{name}*
 %{_libdir}/opera/*
 %{_datadir}/opera/*
