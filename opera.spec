@@ -4,7 +4,7 @@ Summary:    Web Browser for Linux
 Summary(ru):Веб-браузер для Linux
 Name:       opera
 Version:    12.00
-Release:    1%{dist}
+Release:    2%{dist}
 Epoch:      5
 
 Group:      Applications/Internet
@@ -139,6 +139,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Thu Jun 14 2012 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00-2.R
+- Corrected spec for EL6
+
 * Thu Jun 14 2012 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00-1.R
 - Update to 12.00
 
