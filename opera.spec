@@ -1,18 +1,17 @@
-%global origver 1467
+%global origver 1578
 
 Summary:    Web Browser for Linux
 Summary(ru):Веб-браузер для Linux
 Name:       opera
-Version:    12.00
-Release:    2%{dist}
+Version:    12.02
+Release:    1%{dist}
 Epoch:      5
 
 Group:      Applications/Internet
 License:    Proprietary
 URL:        http://www.opera.com
-Source0:    ftp://ftp.opera.com/pub/opera/linux/1200/%{name}-%{version}-%{origver}.x86_64.rpm
-Source1:    ftp://ftp.opera.com/pub/opera/linux/1200/%{name}-%{version}-%{origver}.i386.rpm
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+Source0:    ftp://ftp.opera.com/pub/opera/linux/1202/%{name}-%{version}-%{origver}.x86_64.rpm
+Source1:    ftp://ftp.opera.com/pub/opera/linux/1202/%{name}-%{version}-%{origver}.i386.rpm
 
 BuildRequires:  desktop-file-utils
 
@@ -115,12 +114,7 @@ update-desktop-database &> /dev/null || :
 gtk-update-icon-cache /usr/share/icons/hicolor &>/dev/null || :
 
 
-%clean
-rm -rf %{buildroot}
-
-
 %files
-%defattr(-, root, root)
 %{_defaultdocdir}/%{name}-%{version}
 %{_bindir}/%{name}*
 %{_libdir}/opera/*
@@ -133,12 +127,14 @@ rm -rf %{buildroot}
 %exclude %{_libdir}/%{name}/pluginwrapper/operapluginwrapper-ia32-linux
 
 %files pluginwrapper
-%defattr(-, root, root)
 %{_libdir}/%{name}/pluginwrapper/operapluginwrapper-ia32-linux
 %endif
 
 
 %changelog
+* Fri Aug 31 2012 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.02-1.R
+- Update to 12.02
+
 * Thu Jun 14 2012 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00-2.R
 - Corrected spec for EL6
 
