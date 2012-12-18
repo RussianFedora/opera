@@ -10,8 +10,8 @@ Epoch:      5
 Group:      Applications/Internet
 License:    Proprietary
 URL:        http://www.opera.com
-Source0:    ftp://ftp.opera.com/pub/opera/linux/1211/%{name}-%{version}-%{origver}.x86_64.rpm
-Source1:    ftp://ftp.opera.com/pub/opera/linux/1211/%{name}-%{version}-%{origver}.i386.rpm
+Source0:    ftp://ftp.opera.com/pub/opera/linux/1212/%{name}-%{version}-%{origver}.x86_64.rpm
+Source1:    ftp://ftp.opera.com/pub/opera/linux/1212/%{name}-%{version}-%{origver}.i386.rpm
 
 BuildRequires:  desktop-file-utils
 
