@@ -1,9 +1,9 @@
-%global origver 1661
+%global origver 1707
 
 Summary:    Web Browser for Linux
 Summary(ru):Веб-браузер для Linux
 Name:       opera
-Version:    12.11
+Version:    12.12
 Release:    1%{dist}
 Epoch:      5
 
@@ -132,6 +132,9 @@ gtk-update-icon-cache /usr/share/icons/hicolor &>/dev/null || :
 
 
 %changelog
+* Tue Nov 20 2012 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.12-1.R
+- Update to 12.12
+
 * Tue Nov 20 2012 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.11-1.R
 - Update to 12.11
 
