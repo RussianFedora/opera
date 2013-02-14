@@ -132,7 +132,7 @@ gtk-update-icon-cache /usr/share/icons/hicolor &>/dev/null || :
 
 
 %changelog
-* Thu Feb 14 2012 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.14-1.R
+* Thu Feb 14 2013 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.14-1.R
 - Update to 12.14
 
 * Tue Nov 20 2012 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.12-1.R
