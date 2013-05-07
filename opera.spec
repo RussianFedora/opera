@@ -118,6 +118,7 @@ gtk-update-icon-cache /usr/share/icons/hicolor &>/dev/null || :
 %{_defaultdocdir}/%{name}-%{version}
 %{_bindir}/%{name}*
 %{_libdir}/opera/*
+%exclude %{_libdir}/%{name}/opera_autoupdatechecker
 %{_datadir}/opera/*
 %{_mandir}/man?/*
 %{_datadir}/icons/*
@@ -134,6 +135,9 @@ gtk-update-icon-cache /usr/share/icons/hicolor &>/dev/null || :
 %changelog
 * Tue May 07 2013 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.15-1.R
 - Update to 12.15
+
+* Fri Feb 15 2013 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.14-2.R
+- exclude badlinked opera_autoupdatechecker
 
 * Thu Feb 14 2013 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.14-1.R
 - Update to 12.14
