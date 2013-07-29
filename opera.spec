@@ -1,17 +1,17 @@
-%global origver 1748
+%global origver 1860
 
 Summary:    Web Browser for Linux
 Summary(ru):Веб-браузер для Linux
 Name:       opera
-Version:    12.15
+Version:    12.16
 Release:    1%{dist}
 Epoch:      5
 
 Group:      Applications/Internet
 License:    Proprietary
 URL:        http://www.opera.com
-Source0:    ftp://ftp.opera.com/pub/opera/linux/1215/%{name}-%{version}-%{origver}.x86_64.rpm
-Source1:    ftp://ftp.opera.com/pub/opera/linux/1215/%{name}-%{version}-%{origver}.i386.rpm
+Source0:    ftp://ftp.opera.com/pub/opera/linux/1216/%{name}-%{version}-%{origver}.x86_64.rpm
+Source1:    ftp://ftp.opera.com/pub/opera/linux/1216/%{name}-%{version}-%{origver}.i386.rpm
 
 BuildRequires:  desktop-file-utils
 
@@ -133,6 +133,9 @@ gtk-update-icon-cache /usr/share/icons/hicolor &>/dev/null || :
 
 
 %changelog
+* Mon Jul 29 2013 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.16-1.R
+- Update to 12.16
+
 * Tue May 07 2013 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.15-1.R
 - Update to 12.15
 
